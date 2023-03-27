@@ -49,3 +49,26 @@ end)
 Section:NewButton("Dark Dex V3", "ButtonInfo", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/BypassedDarkDexV3.lua", true))()
 end)
+
+
+local StarterGui = game:GetService("StarterGui")
+
+local Notifications = {
+	"TQR Gui Is Now Loaded Enjoy The Script!",
+}
+
+local TimeBetweenNotifications = 546456465 --REPLACE 5 WITH THE NUMBER OF SECONDS YOU WANT TO WAIT IN BETWEEN NOTIFICATIONS APPEARING
+
+while true do
+	for i = 1, #Notifications do
+		local Notification = Notifications[i]
+		
+		StarterGui:SetCore("SendNotification", {
+			Title = "TQR Notify",
+			Text = Notification,
+			Duration = 5
+		})
+		
+		wait(TimeBetweenNotifications)
+	end
+end
