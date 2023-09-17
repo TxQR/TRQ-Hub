@@ -10,12 +10,12 @@ local Tab = Window:NewTab("Basic")
 local Section = Tab:NewSection("Basic Scripts")
 
 
-Section:NewSlider("Walkspeed", "SliderInfo", 100, 0, function(s)
+Section:NewSlider("Walkspeed", "SliderInfo", 600, 0, function(s)
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
 end)
 
 
-Section:NewSlider("JumpPower", "SliderInfo", 100, 0, function(s)
+Section:NewSlider("JumpPower", "SliderInfo", 600, 0, function(s)
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
 end)
 
